@@ -25,6 +25,10 @@
   background-color: #00c4ba;
 }
 
+.nonactive {
+  background-color: #041f8e;
+}
+
 /* Create a right-aligned (split) link inside the navigation bar */
 .topnav a.split {
   float: right;
