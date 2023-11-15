@@ -5,6 +5,14 @@
   margin-right: auto;
   width: 75%;
 }
+
+.centernav {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 .horizcenter {
   margin-top: auto;
   margin-bottom: auto;
@@ -20,8 +28,6 @@
 .divider-dashed {
   border-style: dashed;
 }
-
-/*idk whats below this, need to figure out*/
 
 .MenuIcon {
     border-style: dashed;
