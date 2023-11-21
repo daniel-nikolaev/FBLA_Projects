@@ -13,6 +13,16 @@
   margin-right: auto;
   width: 45%;
 }
+
+.hiddencenternav {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+  opacity: 0.0;
+}
+
 .horizcenter {
   margin-top: auto;
   margin-bottom: auto;
