@@ -5,6 +5,25 @@
   overflow: auto;
 }
 
+/*Image at top of Navigation Bar*/
+.centernav {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+}
+.hiddencenternav {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+  opacity: 0.0;
+}
+
+
+
 /* Navbar links */
 .navbar a {
   float: left;
