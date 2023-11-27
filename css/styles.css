@@ -6,7 +6,6 @@
   width: 75%;
 }
 
-
 .horizcenter {
   margin-top: auto;
   margin-bottom: auto;
@@ -23,10 +22,17 @@
   border-style: dashed;
 }
 
+.container {
+  padding: 5px;
+}
 .MenuIcon {
-    border-style: dashed;
+  border-style: dashed;
 }
 .img {
   padding-top: 5px;
+}
+
+.inline {
+  display: inline-block;
 }
 

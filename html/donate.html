@@ -26,7 +26,32 @@
 
     
     <body>
+      <form id="donate-form">
+        <div class="container">
+          <h1>Donate to Support Our Clause</h1>
+        
+          <label for="firstname"><b>First Name</b> <i class="required">*</i> </label>
+          <input type="text" placeholder="First Name" name="firstname" required>
 
+          <label for="lastname"><b>Last Name</b> <i class="required">*</i> </label>
+          <input type="text" placeholder="Last Name" name="lastname" required>
+
+          <label for="email"><b>Email</b> <i class="required">*</i> </label>
+          <input type="email" placeholder="Email" name="email" required>
+
+          <label for="donatenum"><b>Donation</b> <i class="required">*</i> </label>
+          <input type="number" min="1" placeholder="How much " name="donatenum" required>
+    
+
+
+          <label for="allergy"><b>Allergies</b></label>
+          <input type="text" placeholder="Are there any allergies we should be aware of?" name="allergy">
+
+          
+          <button type="submit" class="signupbtn" onclick="que()">Sign Up</button>
+          <button type="button" class="cancelbtn" onclick="this.form.reset();">Clear</button>
+        </div>
+    </form>
     </body>
 
 

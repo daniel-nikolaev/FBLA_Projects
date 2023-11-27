@@ -1,16 +1,22 @@
 body {background-color: #eaeaea;}
 div {background-color: #eaeaea;}
 
+.required {
+    color:#FF0000;
+}
 
-.w3h1 {
+.awsh2 {
+    color:#FF9900;
+}
+.w3h2 {
     color:#08aa6d;
 }
-.fah1 {
+.fah2 {
     color:#548ed8;
 }
-.icph1 {
+.icph2 {
     color:#1977d3;
 }
-.fcch1 {
+.fcch2  {
     color:#1b1b33;
 }
