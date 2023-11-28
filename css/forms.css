@@ -1,6 +1,6 @@
 * {box-sizing: border-box}
 
-  input[type=text], input[type=email], input[type=number]{
+  input[type=text], input[type=email], input[type=number] {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -40,7 +40,11 @@ button:hover {
   width: 50%;
 }
 
-
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 @media screen and (max-width: 300px) {
   .cancelbtn, .signupbtn {

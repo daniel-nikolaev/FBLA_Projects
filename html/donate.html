@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="../javascript/donate-que.js"></script>
       </head>
 
     
@@ -28,8 +30,9 @@
     <body>
       <form id="donate-form">
         <div class="container">
-          <h1>Donate to Support Our Clause</h1>
-        
+          <h1>Donate to Support Our Cause</h1>
+          <hr class="dashed">
+          
           <label for="firstname"><b>First Name</b> <i class="required">*</i> </label>
           <input type="text" placeholder="First Name" name="firstname" required>
 
@@ -40,23 +43,46 @@
           <input type="email" placeholder="Email" name="email" required>
 
           <label for="donatenum"><b>Donation</b> <i class="required">*</i> </label>
-          <input type="number" min="1" placeholder="How much " name="donatenum" required>
+          <input type="number" min="1" placeholder="How much would you like to donate today?" name="donatenum" required>
     
-
-
-          <label for="allergy"><b>Allergies</b></label>
-          <input type="text" placeholder="Are there any allergies we should be aware of?" name="allergy">
-
+          <div class="donatecontain">
+            <h2><b>Credit Card Information</b></h3> 
+            <p></p>
+            <label for="credit-card-num"><b>Card Number</b></label>
+              <img src="../pictures/creditcards.png" alt="DynaStat Logo" class="smol">
+            <input type="text" placeholder="Valid Credit Card" value="1234 5678 9012 3456" name="credit-card-num">
+            <label for="expiration"><b>Expiration</b></label>
+            <input type="text" placeholder="Expiration Date" value="00/00" name="expiration">
+            <label for="ccv-code"><b>CCV Code</b></label>
+            <input type="number" placeholder="Security Code" value="123" name="ccv-code">
+          </div>
+          <hr class="dashed">
+          <div class="donatecontain">
+            <h2><b>Billing Information</b></h3> 
+            <p></p>
+            <label for="addy"><b>Billing Address</b></label>
+            <input type="text" placeholder="Valid Address" name="addy">
+            <label for="expiration"><b>City</b></label>
+            <input type="text" placeholder="Expiration Date" name="expiration">
+            <label for="state"><b>State</b></label>
+            <input type="text" placeholder="US State" name="state">
+            <label for="zip-code"><b>Zip Code</b></label>
+            <input type="number" placeholder="Zip Code" name="zip-code">
+          </div>
+            
+          </div>
           
-          <button type="submit" class="signupbtn" onclick="que()">Sign Up</button>
-          <button type="button" class="cancelbtn" onclick="this.form.reset();">Clear</button>
+          <div class="clearfix">
+            <button type="submit" class="signupbtn" onclick="que()">Donate</button>
+            <button type="button" class="cancelbtn" onclick="this.form.reset();">Cancel/Clear</button>
+          </div>
         </div>
     </form>
     </body>
 
-
-    <footer>
-        
+    <br>
+    <footer class="footer">
+      <p class="center">&nbsp;&nbsp; 2023 &copy; Dynastat</p>
+      <p>**I, the author/creator of DynaStat, give permission to myself, the author/creator of this website and competition submission, for the use of the DynaStat name, domain, applicable logo(s), and brand color palette. </p>
     </footer>
-    
 </html>

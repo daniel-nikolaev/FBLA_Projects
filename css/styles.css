@@ -5,31 +5,34 @@
   margin-right: auto;
   width: 75%;
 }
-
 .horizcenter {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.smol {
+  width: 17%;
+  margin-left: 15px;
 }
 
 .nav-icons {
   text-decoration: none;
 }
 
-.divider-solid {
-  border-style: solid;
-}
-.divider-dashed {
-  border-style: dashed;
-}
-
 .container {
   padding: 5px;
 }
+.donatecontain {
+  background: #d3d3d3;
+  padding: 15px;
+}
+
 .MenuIcon {
   border-style: dashed;
 }
+
 .img {
-  padding-top: 5px;
+  padding-top: 15px;
 }
 
 .inline {

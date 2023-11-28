@@ -1,8 +1,28 @@
-body {background-color: #eaeaea;}
-div {background-color: #eaeaea;}
+body {
+    background-color: #eaeaea;
+    display: inline-block;
+    left: 0;
+}
+div {
+    background-color: #eaeaea;
+    left: 0;
+}
 
 .required {
     color:#FF0000;
+}
+
+.navbar {
+    background-color: #041f8e;
+    left: 0;
+}
+.footer {
+    display: block;
+    width: 100%;
+    background-color: #10A7F9;
+    left: 0;
+    bottom: 0;
+    padding: 5px;
 }
 
 .awsh2 {
@@ -16,7 +36,4 @@ div {background-color: #eaeaea;}
 }
 .icph2 {
     color:#1977d3;
-}
-.fcch2  {
-    color:#1b1b33;
 }
