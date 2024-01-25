@@ -1,6 +1,6 @@
 # DynaStat - Dynamic Statistics
 
-CodeBase for my DynaStat FBLA Project that is based off of my Community Service version of the website
+CodeBase for my DynaStat DECA Manuel that is based off of my Community Service version of the website
 
 Light Blue - #00c4ba
 rgba(0,196,186,255)

@@ -1,9 +1,42 @@
 /* Style the navigation bar */
 .navbar {
   width: 100%;
-  overflow: auto;
-  left: 0;
+  overflow: hidden;
+  padding: .5%;
 }
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 25px;
+  margin-left:2.5px;
+}
+
+/* Create a right-aligned (split) link inside the navigation bar */
+.navbar a.split {
+  float: right;
+  color: white;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #808080;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #00c4ba;
+}
+
+.nonactive {
+  background-color: #041f8e;
+}
+
 
 /*Image at top of Navigation Bar*/
 .centernav {
@@ -23,37 +56,6 @@
 }
 
 
-
-/* Navbar links */
-.navbar a {
-  float: left;
-  text-align: center;
-  padding: 12px;
-  color: white;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Navbar links on mouse-over */
-.navbar a:hover {
-  background-color: #808080;
-}
-
-/* Current/active navbar link */
-.active {
-  background-color: #00c4ba;
-}
-
-.nonactive {
-  background-color: #041f8e;
-}
-
-/* Create a right-aligned (split) link inside the navigation bar */
-.topnav a.split {
-  float: right;
-  background-color: #00c4ba;
-  color: white;
-}
 
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
 @media screen and (max-width: 500px) {
