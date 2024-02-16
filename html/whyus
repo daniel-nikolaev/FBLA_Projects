@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- Comment -->
+<html lang="en">
+  
+<!-- Head Stuff -->
+  <head>
+    <!--Website Tab Title-->
+    <title>DynaStat Home</title>
+    <!--Website Favicon-->
+    <link rel="icon" type="image/x-icon" href="pictures/favicon.png">
+    <!--Linking CSS Sheet that has all other CSS's attached-->
+    <link rel="stylesheet" href="../aaaMAIN.css">
+
+    <!-- Load an icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Responsive Web Tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    
+  </head>
+
+
+<!-- Header Stuff -->
+  <header>
+    <div class="centernav">
+        <img src="../pictures/dynastat.png" alt="DynaStat Logo" class="center">
+        </div>
+
+    <div class="navbar"  style="display: inline-block;">
+      <a class="active" href="../home"><i class="fa fa-fw fa-home"></i> Home</a>
+      <a class="nonactive" href="whyus"><i class="fa fa-fw fa-home"></i> Why Us?</a>
+      <a class="nonactive" href="https://github.com/daniel-nikolaev/FBLA_Projects/tree/Website_Coding_Development-SLC2023-24" target="blank"><i class="fa fa-fw fa-github"></i></i> CodeBase</a>
+      <a class="nonactive split" href="index.html"><i class="fa fa-fw fa-user-plus"></i></i> Login</a>
+    </div>
+    <br>
+    <div class="divider-dashed"></div>
+  </header>
+
+<!-- Body Stuff -->
+  <body>
+    <h2>Why Should You Work for DynaStat?</h2>
+    
+  </body>
+
+<!-- Footer Things -->
+  <br>
+  <footer class="footer">
+    <p class="center">2023 &copy; Dynastat</p>
+    <p>&nbsp; **I, the author/creator of DynaStat, give permission to myself, the author/creator of this website and competition submission, for the use of the DynaStat name, domain, applicable logo(s), and brand color palette. </p>
+  </footer>
+</html>

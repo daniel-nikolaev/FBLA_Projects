@@ -28,7 +28,9 @@
         </div>
 
     <div class="navbar">
-      <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+      <a class="active" href="home"><i class="fa fa-fw fa-home"></i> Home</a>
+      <a class="nonactive" href="/html/whyus"><i class="fa fa-fw fa-home"></i> Why Us?</a>
+      <a class="nonactive" href="https://github.com/daniel-nikolaev/FBLA_Projects/tree/Website_Coding_Development-SLC2023-24" target="blank"><i class="fa fa-fw fa-github"></i></i> CodeBase</a>
       <a class="nonactive split" href="index.html"><i class="fa fa-fw fa-user-plus"></i></i> Login</a>
     </div>
 
