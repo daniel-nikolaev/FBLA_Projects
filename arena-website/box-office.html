@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Office - Community Arena</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="events.html">Events Calendar</a>
+            <a href="box-office.html">Box Office</a>
+            <a href="info.html">Arena Info</a>
+            <a href="planner.html">Planner</a>
+        </div>
+    </header>
+
+    <section class="box-office">
+        <h1>Buy Tickets</h1>
+        <p>Select an event to purchase tickets:</p>
+        <form action="/purchase-tickets" method="POST">
+            <label for="event">Choose Event:</label>
+            <select name="event" id="event">
+                <option value="basketball">Local Basketball Game</option>
+                <option value="concert">Rock Concert</option>
+                <option value="trade-show">Trade Show</option>
+                <option value="graduation">High School Graduation</option>
+            </select>
+
+            <label for="tickets">Number of Tickets:</label>
+            <input type="number" name="tickets" id="tickets" min="1" max="10" required>
+
+            <button type="submit">Buy Tickets</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Community Arena | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
+    
