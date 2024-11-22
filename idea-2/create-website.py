@@ -2,10 +2,10 @@ import os
 
 # Define the folder structure
 folders = [
-    'website',
-    'website/css',
-    'website/js',
-    'website/images'
+    'idea-2',
+    'idea-2/css',
+    'idea-2/js',
+    'idea-2/images'
 ]
 
 # Define the HTML content for each page
@@ -135,7 +135,6 @@ html_content = {
                         <a href="box-office.html" class="btn btn-primary">Buy Tickets</a>
                     </div>
                 </div>
-                <!-- Add more events as necessary -->
             </div>
         </div>
     </section>
@@ -203,6 +202,105 @@ html_content = {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+''',
+
+    'information.html': '''<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Information about the Community Arena, including directions, seating charts, and amenities.">
+    <title>Information - Community Arena</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Community Arena</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="calendar.html">Calendar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="box-office.html">Box Office</a></li>
+                    <li class="nav-item"><a class="nav-link" href="information.html">Information</a></li>
+                    <li class="nav-item"><a class="nav-link" href="planner.html">Arena Planner</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Information Section -->
+    <section class="container my-5">
+        <h2>Arena Information</h2>
+        <p>Here you can find details about the Community Arena, including directions, seating charts, and available amenities.</p>
+        <ul>
+            <li><a href="#">Directions</a></li>
+            <li><a href="#">Seating Chart</a></li>
+            <li><a href="#">Parking</a></li>
+            <li><a href="#">Amenities</a></li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Community Arena. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS & Optional JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+''',
+
+    'planner.html': '''<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plan your event at the Community Arena. Learn more about rental options and how to contact us.">
+    <title>Arena Planner - Community Arena</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Community Arena</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="calendar.html">Calendar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="box-office.html">Box Office</a></li>
+                    <li class="nav-item"><a class="nav-link" href="information.html">Information</a></li>
+                    <li class="nav-item"><a class="nav-link" href="planner.html">Arena Planner</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Planner Section -->
+    <section class="container my-5">
+        <h2>Plan Your Event</h2>
+        <p>Interested in hosting an event at the Community Arena? Here is everything you need to know.</p>
+        <ul>
+            <li><a href="#">Rental Information</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Booking Form</a></li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Community Arena. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS & Optional JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
 '''
 }
 
@@ -212,7 +310,7 @@ for folder in folders:
 
 # Create HTML files and write the content
 for filename, content in html_content.items():
-    with open(f'website/{filename}', 'w') as file:
+    with open(f'idea-2/{filename}', 'w') as file:
         file.write(content)
 
-print("Website structure and files have been created!")
+print("Website structure and all pages have been created!")
