@@ -1,0 +1,46 @@
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and container setup */
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* Ensures the container takes up the full height of the viewport */
+}
+
+/* Main content area */
+main {
+    flex-grow: 1;  /* Ensures the main content area takes up all available space */
+}
+
+/* Styling for the footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Button styles */
+.btn {
+    background-color: #009639;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #B3A369;
+}
