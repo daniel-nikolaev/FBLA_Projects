@@ -44,3 +44,25 @@ footer {
 .btn:hover {
     background-color: #B3A369;
 }
+
+
+.hero {
+    background-image: url("/images/court_view.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
