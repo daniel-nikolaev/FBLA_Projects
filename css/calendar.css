@@ -109,33 +109,6 @@ footer {
     background-color: #B3A369;
 }
 
-/* Quick Links Section Centering */
-section.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-/* Ensuring the row is centered horizontally */
-.row {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    gap: 20px;  /* Space between the columns */
-}
-
-/* Each column is centered with text */
-.col-md-4 {
-    text-align: center;
-}
-
-/* Optional: Give some spacing around each column */
-.col-md-4 ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .container {
