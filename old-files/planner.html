@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Buford Arena - Go Wolves!">
-    <title>Buford Arena - Go Wolves</title>
+    <meta name="description" content="Buford Arena rental planning information.">
+    <title>Arena Planner - Buford Arena</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="/images/buford-favicon.ico">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FN72NQPVD7"></script>
@@ -19,7 +18,6 @@
     gtag('config', 'G-FN72NQPVD7');
     </script>
 </head>
-
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #009639;">
@@ -41,48 +39,32 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <h1>Welcome to Buford Arena</h1>
-        <p>Go Wolves!</p>
-        <a href="calendar.html" class="btn btn-light btn-lg">See Upcoming Events</a> 
-    </header>
-
-    <!-- Quick Links -->
+    <!-- Arena Planner Section -->
     <section class="container my-5">
-        <div class="row justify-content-center">
-            <div class="col-md text-center">
-                <h2>Upcoming Events</h2>
-                <ul>
-                    <li><a href="calendar.html">View Full Calendar</a></li>
-                    <li><a href="box-office.html">Buy Tickets</a></li>
-                </ul>
-            </div>
-            <div class="col-md text-center">
-                <h2>Book Your Event</h2>
-                <p>Rent the arena for your own event.</p>
-                <a href="planner.html" class="btn btn-primary">Plan Your Event</a>
-            </div>
-            <div class="col-md text-center">
-                <h2>Venue Information</h2>
-                <ul>
-                    <li><a href="information.html">Directions & Parking</a></li>
-                    <li><a href="information.html">Seating Chart</a></li>
-                    <li><a href="information.html">Amenities</a></li>
-                </ul>
-            </div>
-        </div>
+        <h2>Plan Your Event</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+            <label for="eventDate">Event Date:</label>
+            <input type="date" id="eventDate" class="form-control" required>
+            <label for="eventType">Event Type:</label>
+            <select id="eventType" class="form-control">
+                <option>Basketball Game</option>
+                <option>Concert</option>
+                <option>Trade Show</option>
+                <option>Private Event</option>
+            </select>
+            <label for="attendance">Expected Attendance:</label>
+            <input type="number" id="attendance" class="form-control" placeholder="Expected Attendance" required>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
     </section>
-
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 Buford Arena. All rights reserved.</p>
-        <p>Follow us: 
-            <a href="#" class="text-white">Facebook</a> | 
-            <a href="#" class="text-white">Instagram</a> | 
-            <a href="#" class="text-white">Twitter</a>
-        </p>
     </footer>
 
     <!-- Bootstrap JS & Optional JavaScript -->
