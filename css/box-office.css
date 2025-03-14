@@ -1,0 +1,39 @@
+/* Ticket Booking Form */
+.ticket-form {
+    max-width: 500px;
+    margin: 100px auto 50px auto; /* Center the form and adjust spacing */
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #009639;
+}
+
+/* Form Fields */
+.ticket-form .form-label {
+    font-weight: bold;
+}
+
+.ticket-form .form-control, 
+.ticket-form .form-select {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Button Styling (inherits btn styling from styles.css) */
+.ticket-form .btn-primary {
+    width: 100%;
+    background-color: #009639;
+}
+
+.ticket-form .btn-primary:hover {
+    background-color: #B3A369;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+    .ticket-form {
+        width: 90%;
+    }
+}
