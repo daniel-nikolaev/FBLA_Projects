@@ -8,10 +8,22 @@
     <!-- Link to Bootstrap CSS for the navbar -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Link to FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/0ecee0f13d.js" crossorigin="anonymous"></script>
+
     <!-- Link to custom calendar styles -->
     <link rel="stylesheet" href="css/calendar.css">
     <link rel="icon" type="image/x-icon" href="/images/buford-favicon.ico">
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FN72NQPVD7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-FN72NQPVD7');
+    </script>
 </head>
 <body>
     <!-- Navbar -->
@@ -24,11 +36,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link text-white" href="calendar.html">Calendar</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="box-office.html">Box Office</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="information.html">Information</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="planner.html">Arena Planner</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="cite.html">Citations</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="calendar.html"><i class="fa-solid fa-calendar"></i> Calendar</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="box-office.html"><i class="fa-solid fa-ticket"></i> Box Office</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="information.html"><i class="fa-solid fa-circle-info"></i> Information</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="planner.html"><i class="fa-solid fa-envelope"></i> Arena Planner</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="cite.html"><i class="fa-regular fa-rectangle-list"></i> Citations</a></li>
                 </ul>
             </div>
         </div>
@@ -46,7 +58,8 @@
         <div class="sidebar p-3">
             <!-- Text Content Section -->
             <div class="text-content">
-                <h3>Welcome to Our Calendar</h3>
+                <h3>Major Events Coming Up</h3>
+                <br>
 
                 <h4>Men's Basketball</h4>
                 <div class="d-flex flex-column text-monospace">
@@ -77,6 +90,11 @@
         </div>
 
     </div>
+
+    <!-- Footer -->
+    <footer style="background-color: #B3A369; color: white; text-align: center; padding: 20px; width: 100%;">
+        <p>&copy; 2024 Buford Arena. All rights reserved.</p>
+    </footer>
 
     <!-- Bootstrap JS (for navbar toggle) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>

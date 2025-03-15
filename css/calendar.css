@@ -13,6 +13,11 @@ body, html {
     flex-direction: column;
 }
 
+h3 {
+    color: #B3A369;
+    font-style: bold;
+}
+
 /* Ensure body and html elements take up full height */
 body {
     min-height: 100vh;

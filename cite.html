@@ -6,17 +6,18 @@
     <meta name="description" content="Citations for Buford Arena Website Development">
     <title>Sources & Citations</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/0ecee0f13d.js" crossorigin="anonymous"></script>
     <link href="css/styles.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/images/buford-favicon.ico">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FN72NQPVD7"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-FN72NQPVD7');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-FN72NQPVD7');
     </script>
 </head>
 <body>
@@ -30,11 +31,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link text-white" href="calendar.html">Calendar</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="box-office.html">Box Office</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="information.html">Information</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="planner.html">Arena Planner</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="cite.html">Citations</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="calendar.html"><i class="fa-solid fa-calendar"></i> Calendar</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="box-office.html"><i class="fa-solid fa-ticket"></i> Box Office</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="information.html"><i class="fa-solid fa-circle-info"></i> Information</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="planner.html"><i class="fa-solid fa-envelope"></i> Arena Planner</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="cite.html"><i class="fa-regular fa-rectangle-list"></i> Citations</a></li>
                 </ul>
             </div>
         </div>
@@ -43,14 +44,23 @@
     <!-- Main Content Section -->
     <main>
         <section class="container my-5">
+            <br>
             <h2>Citations & References</h2>
             <p>This page lists the sources and references used during the development of the Buford Arena website.</p>
 
             <!-- Sources Section -->
             <div class="row">
                 <div class="col-md-12">
-                    <h4>Sources Used</h4>
+                    <h4>Coding Sources Used:</h4>
                     <ul>
+                        <li>
+                            <strong>GitHub Repository</strong> - Source code for the Buford Arena website.
+                            <br><a href="https://github.com/da-c0d3r/FBLA_Projects/tree/Website_Design-RLC2024-25" target="_blank">GitHub Repository</a>
+                        </li>
+                        <li>
+                            <strong>Amazon AWS Amplify</strong> - Website hosting and management.
+                            <br><a href="https://aws.amazon.com/amplify/" target="_blank">AWS Amplify</a>
+                        </li>
                         <li>
                             <strong>Bootstrap 5 Documentation</strong> - For CSS and responsive grid layout.
                             <br><a href="https://getbootstrap.com/docs/5.1/" target="_blank">Bootstrap 5 Docs</a>
@@ -67,29 +77,28 @@
                             <strong>W3 Schools</strong> - For guidance on basic HTML tips and tricks.
                             <br><a href="https://www.w3schools.com/html/default.asp" target="_blank">W3 Schools.org</a>
                         </li>
-                        <li>
-                            <strong>Stadium Pictures</strong> - Images of the stadium used in the website.
-                            <br><a href="https://www.bufordcityschools.org/apps/pages/index.jsp?uREC_ID=1675748&type=d&pREC_ID=1830633" target="_blank">Buford City Schools - Stadium Images</a>
-                        </li>
-                        <li>
-                            <strong>Basketball Scheduling</strong> - Information on basketball schedules and events.
-                            <br><a href="https://www.bufordwolves.com/" target="_blank">Buford Wolves - Basketball Scheduling</a>
-                        </li>
-                        <li>
-                            <strong>GitHub Repository</strong> - Source code for the Buford Arena website.
-                            <br><a href="https://github.com/da-c0d3r/FBLA_Projects/tree/Website_Design-RLC2024-25" target="_blank">GitHub Repository</a>
-                        </li>
-                    </ul>
-                    
-                                      
+                    </ul>                  
                 </div>
+            </div><div class="col-md-12">
+                <h4>Other Sources Used:</h4>
+                <ul>
+                    <li>
+                        <strong>Stadium Pictures</strong> - Images of the stadium used in the website.
+                        <br><a href="https://www.bufordcityschools.org/apps/pages/index.jsp?uREC_ID=1675748&type=d&pREC_ID=1830633" target="_blank">Buford City Schools - Stadium Images</a>
+                    </li>
+                    <li>
+                        <strong>Basketball Scheduling</strong> - Information on basketball schedules and events.
+                        <br><a href="https://www.bufordwolves.com/" target="_blank">Buford Wolves - Basketball Scheduling</a>
+                    </li>
+                </ul>                  
             </div>
+        </div>
 
         </section>
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <p>&copy; 2024 Buford Arena. All rights reserved.</p>
     </footer>
 

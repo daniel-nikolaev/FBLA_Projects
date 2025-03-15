@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+h3 {
+    color: #B3A369;
+}
+
 /* Body and container setup */
 body, html {
     height: 100%;
@@ -87,8 +91,8 @@ iframe {
 }
 
 /* Footer styling */
-footer {
-    background-color: #333;
+.footer {
+    background-color: #B3A369; 
     color: white;
     text-align: center;
     padding: 20px;
