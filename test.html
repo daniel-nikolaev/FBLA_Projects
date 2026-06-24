@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Your Event</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom Theme Colors */
+        :root {
+            --main-color: #009639;
+            --accent-color: #B3A369;
+            --light-bg: #f8f9fa;
+            --white: #ffffff;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: var(--main-color);
+        }
+
+        .navbar-brand {
+            color: var(--white) !important;
+            font-weight: bold;
+        }
+
+        .nav-link {
+            color: var(--white) !important;
+        }
+
+        /* Ticket Form Container */
+        body {
+            background-color: var(--light-bg);
+        }
+
+        .ticket-form {
+            max-width: 500px;
+            margin: 80px auto 50px auto;
+            background: var(--white);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-top: 5px solid var(--main-color);
+        }
+
+        .btn-primary {
+            background-color: var(--main-color);
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-color);
+        }
+
+        /* Total Price Box */
+        .total-box {
+            background-color: #f8f9fa; /* Light gray background */
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border: 2px solid #009639; /* Green border */
+            color: #009639;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Buford Arena</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="calendar.html">Calendar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="box-office.html">Box Office</a></li>
+                    <li class="nav-item"><a class="nav-link" href="information.html">Information</a></li>
+                    <li class="nav-item"><a class="nav-link" href="planner.html">Arena Planner</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cite.html">Citations</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Event Planning Form -->
+    <div class="ticket-form">
+        <h3 class="text-center mb-4">Plan Your Event</h3>
+        <form id="eventForm">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="eventDate" class="form-label">Event Date</label>
+                <input type="date" class="form-control" id="eventDate" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="eventType" class="form-label">Event Type</label>
+                <select class="form-select" id="eventType" required onchange="toggleOtherField()">
+                    <option value="" selected disabled>Select an event type...</option>
+                    <option value="Basketball">Basketball Game</option>
+                    <option value="Gymnastics">Gymnastics</option>
+                    <option value="Preformance">Preformance</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+
+            <!-- Initially Hidden "Other" Input Field -->
+            <div class="mb-3" id="otherEventDiv" style="display: none;">
+                <label for="otherEventType" class="form-label">Specify Your Event</label>
+                <input type="text" class="form-control" id="otherEventType" placeholder="Describe your event">
+            </div>
+
+            <div class="mb-3">
+                <label for="attendance" class="form-label">Expected Attendance</label>
+                <input type="number" class="form-control" id="attendance" placeholder="Expected Attendance" min="1" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary mt-3">Submit Event Request</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script scr="js/other.js"></script>
+    <script>
+        // Handle Form Submission
+        document.getElementById("eventForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let date = document.getElementById("eventDate").value;
+            let eventType = document.getElementById("eventType").value;
+            let attendance = document.getElementById("attendance").value;
+
+            if (!eventType) {
+                alert("Please select an event type.");
+                return;
+            }
+
+            alert(`📅 Event Request Submitted!\n\nName: ${name}\nEmail: ${email}\nDate: ${date}\nEvent Type: ${eventType}\nExpected Attendance: ${attendance}`);
+        });
+
+        function toggleOtherField() {
+            let eventType = document.getElementById("eventType").value;
+            let otherEventDiv = document.getElementById("otherEventDiv");
+            let otherEventInput = document.getElementById("otherEventType");
+
+            if (eventType === "Other") {
+                otherEventDiv.style.display = "block"; // Show text field
+                otherEventInput.setAttribute("required", "true"); // Make it required
+            } else {
+                otherEventDiv.style.display = "none"; // Hide text field
+                otherEventInput.removeAttribute("required"); // Remove required
+                otherEventInput.value = ""; // Clear value when hidden
+            }
+        }
+
+    </script>
+</body>
+</html>
